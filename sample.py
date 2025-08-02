@@ -6,6 +6,9 @@ def is_even(num):
     else:
         return f"{num} is odd"
 
-# Test
-number = 7
-print(is_even(number))
+# Updated: Get user input
+try:
+    number = int(input("Enter a number: "))
+    print(is_even(number))
+except ValueError:
+    print("Please enter a valid integer.")
